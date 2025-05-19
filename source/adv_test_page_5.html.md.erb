@@ -1,0 +1,69 @@
+---
+title: Advanced Workflow Test Page 5
+---
+
+# Advanced Workflow Test Page 5
+
+This is advanced test page 5, part of a set of 7 designed for comprehensive workflow testing on branch 'feature/advanced-crosslink-tests'.
+
+## ERB Processing Test
+<p>Page 5 - Current Time (ERB): <%= Time.now.strftime('%Y-%m-%d %H:%M:%S %Z') %></p>
+<p>ERB Dynamic String (Page 5): <%= "Dynamic content for page 5." %></p>
+
+## Markdown Rendering Tests (Page 5)
+
+### Text Formatting
+*Italic text on page 5.*
+**Bold text on page 5.**
+`Inline code on page 5.`
+
+### Lists
+*   Unordered List Item Alpha (Page 5)
+*   Unordered List Item Beta (Page 5)
+
+1.  Ordered List Item I (Page 5)
+2.  Ordered List Item II (Page 5)
+
+### Blockquotes
+> This is a blockquote for Page 5.
+
+### Code Blocks
+```python
+# Python code block on Page 5
+def greet_page_5():
+  print(f"Hello from Page 5!")
+```
+
+## Raw HTML Passthrough Test (Page 5)
+<div style="border: 2px solid green; padding: 10px; margin-top: 5px;">
+  <p style="color: darkgreen; font-weight: bold;">Raw HTML section for Page 5.</p>
+  <button onclick="alert('HTML Button on Page 5 clicked!')">Click (Page 5)</button>
+</div>
+
+## Link Checker Tests (Page 5)
+
+### Valid Internal Links (to other new advanced test pages)
+*   [Link to Adv Test Page 1](adv_test_page_1.html.md.erb)
+*   [Link to Adv Test Page 2](adv_test_page_2.html.md.erb)
+*   [Link to Adv Test Page 3](adv_test_page_3.html.md.erb)
+*   [Link to Adv Test Page 4](adv_test_page_4.html.md.erb)
+*   [Link to Adv Test Page 6](adv_test_page_6.html.md.erb)
+*   [Link to Adv Test Page 7](adv_test_page_7.html.md.erb)
+
+### Valid Internal Links (to existing pages)
+*   [Link to Main Index](index.html.md.erb)
+*   [Link to Legacy TDT Docs Index](legacy-tdt-documentation/index.html.md.erb)
+
+### Valid External Links (Page 5)
+*   [Valid External Link A - Page 5](https://www.python.org/)
+*   [Valid External Link B - Page 5](https://www.ruby-lang.org/en/)
+
+### Intentionally Broken Links (Page 5)
+*   [Previously Broken Internal Link - Now to Index (Page 5)](index.html.md.erb)
+*   [Previously Broken External Link - Now Valid (Page 5)](https://www.google.com/search?q=TestPage5)
+
+### Links with Specific HTTP Status Codes (accepted by lychee config: 403, 429) - Page 5
+*   [Valid Wikipedia Link (Page 5)](https://en.wikipedia.org/wiki/Hyperlink)
+*   [Valid GitHub Raw Link (Page 5)](https://raw.githubusercontent.com/education/github-cli-cheat-sheet/main/README.md)
+
+<p>End of Advanced Workflow Test Page 5.</p>
