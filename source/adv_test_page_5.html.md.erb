@@ -59,11 +59,21 @@ def greet_page_5():
 *   [Valid External Link B - Page 5](https://www.ruby-lang.org/en/)
 
 ### Intentionally Broken Links (Page 5)
-*   [Previously Broken Internal Link - Now to Index (Page 5)](index.html.md.erb)
-*   [Previously Broken External Link - Now Valid (Page 5)](https://www.google.com/search?q=TestPage5)
+*   [Broken Internal Link Test (Page 5)](broken_internal_retest_page_5.html)
+*   [Broken External Link Test (Page 5)](http://this.is.a.retest.broken.link.page.5.example.com)
 
 ### Links with Specific HTTP Status Codes (accepted by lychee config: 403, 429) - Page 5
-*   [Valid Wikipedia Link (Page 5)](https://en.wikipedia.org/wiki/Hyperlink)
-*   [Alternative Valid GitHub Raw Link (Page 5)](https://raw.githubusercontent.com/github/linguist/master/README.md)
+*   [Potential Status Code Wikipedia (Page 5)](https://en.wikipedia.org/wiki/NonExistent_WikiPage_Test5)
+*   [Potential Status Code GitHub Raw (Page 5)](https://raw.githubusercontent.com/user/project/main/non_existent_raw_file_5.md)
+
+### Additional External Links (StackOverflow/Wikipedia) - Page 5
+
+*   [Valid Stack Overflow Question (Page 5)](https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit)
+*   [Valid Wikipedia Page (Page 5)](https://en.wikipedia.org/wiki/Application_programming_interface)
+*   [Broken Stack Overflow Link (Page 5)](https://stackoverflow.com/questions/00000005/this-will-not-exist-test5)
+*   [Specific/Test Wikipedia Link (Page 5)](https://en.wikipedia.org/wiki/Wikipedia:Verifiability)
+*   [SO: NestedAggregationDescriptor (Page 5)](https://stackoverflow.com/questions/79628630/nestedaggregationdescriptor-in-elastic-8-not-working)
+*   [SO: Expo Record Audio/Video (Page 5)](https://stackoverflow.com/questions/79628624/can-i-record-system-audio-and-video-simunteniosly-using-expo-react-native)
+*   [SO: Phone USB Ethernet Hub (Page 5)](https://stackoverflow.com/questions/79628617/how-to-connect-phone-to-two-usb-to-ethernet-adapters-using-usb-hub-and-ethernet)
 
 <p>End of Advanced Workflow Test Page 5.</p>

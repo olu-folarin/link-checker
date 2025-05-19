@@ -59,11 +59,21 @@ def greet_page_2():
 *   [Valid External Link B - Page 2](https://www.w3.org/standards/)
 
 ### Intentionally Broken Links (Page 2)
-*   [Previously Broken Internal Link - Now to Index (Page 2)](index.html.md.erb)
-*   [Previously Broken External Link - Now Valid (Page 2)](https://www.google.com/search?q=TestPage2)
+*   [Broken Internal Link Test (Page 2)](broken_internal_retest_page_2.html)
+*   [Broken External Link Test (Page 2)](http://this.is.a.retest.broken.link.page.2.example.com)
 
 ### Links with Specific HTTP Status Codes (accepted by lychee config: 403, 429) - Page 2
-*   [Valid Wikipedia Link (Page 2)](https://en.wikipedia.org/wiki/Example)
-*   [Valid GitHub Raw Link (Page 2)](https://raw.githubusercontent.com/actions/checkout/main/README.md)
+*   [Potential Status Code Wikipedia (Page 2)](https://en.wikipedia.org/wiki/NonExistent_WikiPage_Test2)
+*   [Potential Status Code GitHub Raw (Page 2)](https://raw.githubusercontent.com/user/project/main/non_existent_raw_file_2.md)
+
+### Additional External Links (StackOverflow/Wikipedia) - Page 2
+
+*   [Valid Stack Overflow Question (Page 2)](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely)
+*   [Valid Wikipedia Page (Page 2)](https://en.wikipedia.org/wiki/Unit_testing)
+*   [Broken Stack Overflow Link (Page 2)](https://stackoverflow.com/questions/00000002/this-will-not-exist-test2)
+*   [Specific/Test Wikipedia Link (Page 2)](https://en.wikipedia.org/wiki/Help:IPA)
+*   [SO: NestedAggregationDescriptor (Page 2)](https://stackoverflow.com/questions/79628630/nestedaggregationdescriptor-in-elastic-8-not-working)
+*   [SO: Expo Record Audio/Video (Page 2)](https://stackoverflow.com/questions/79628624/can-i-record-system-audio-and-video-simunteniosly-using-expo-react-native)
+*   [SO: Phone USB Ethernet Hub (Page 2)](https://stackoverflow.com/questions/79628617/how-to-connect-phone-to-two-usb-to-ethernet-adapters-using-usb-hub-and-ethernet)
 
 <p>End of Advanced Workflow Test Page 2.</p>

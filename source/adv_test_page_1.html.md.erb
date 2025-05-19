@@ -59,11 +59,21 @@ def greet_page_1():
 *   [Valid External Link B - Page 1](https://www.fsf.org/)
 
 ### Intentionally Broken Links (Page 1)
-*   [Previously Broken Internal Link - Now to Index (Page 1)](index.html.md.erb)
-*   [Previously Broken External Link - Now Valid (Page 1)](https://www.google.com/search?q=TestPage1)
+*   [Broken Internal Link Test (Page 1)](broken_internal_retest_page_1.html)
+*   [Broken External Link Test (Page 1)](http://this.is.a.retest.broken.link.page.1.example.com)
 
 ### Links with Specific HTTP Status Codes (accepted by lychee config: 403, 429) - Page 1
-*   [Valid Wikipedia Link (Page 1)](https://en.wikipedia.org/wiki/Test)
-*   [Valid GitHub Raw Link (Page 1)](https://raw.githubusercontent.com/octocat/Spoon-Knife/main/README.md)
+*   [Potential Status Code Wikipedia (Page 1)](https://en.wikipedia.org/wiki/NonExistent_WikiPage_Test1)
+*   [Potential Status Code GitHub Raw (Page 1)](https://raw.githubusercontent.com/user/project/main/non_existent_raw_file_1.md)
+
+### Additional External Links (StackOverflow/Wikipedia) - Page 1
+
+*   [Valid Stack Overflow Question (Page 1)](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array)
+*   [Valid Wikipedia Page (Page 1)](https://en.wikipedia.org/wiki/Continuous_integration)
+*   [Broken Stack Overflow Link (Page 1)](https://stackoverflow.com/questions/00000001/this-will-not-exist-test1)
+*   [Specific/Test Wikipedia Link (Page 1)](https://en.wikipedia.org/wiki/Special:Random)
+*   [SO: NestedAggregationDescriptor (Page 1)](https://stackoverflow.com/questions/79628630/nestedaggregationdescriptor-in-elastic-8-not-working)
+*   [SO: Expo Record Audio/Video (Page 1)](https://stackoverflow.com/questions/79628624/can-i-record-system-audio-and-video-simunteniosly-using-expo-react-native)
+*   [SO: Phone USB Ethernet Hub (Page 1)](https://stackoverflow.com/questions/79628617/how-to-connect-phone-to-two-usb-to-ethernet-adapters-using-usb-hub-and-ethernet)
 
 <p>End of Advanced Workflow Test Page 1.</p>
