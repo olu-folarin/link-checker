@@ -1,0 +1,51 @@
+---
+title: Workflow Test Page
+---
+
+# Workflow Test Page
+
+This page is designed to test various aspects of the GitHub Actions workflows.
+
+## ERB Test
+<p>The current time processed by ERB is: <%= Time.now.strftime('%Y-%m-%d %H:%M:%S %Z') %></p>
+<p>A simple ERB string: <%= "This string comes from ERB!" %></p>
+
+## Markdown Tests
+
+### Text Formatting
+*This should be italic.*
+**This should be bold.**
+`This should be inline code.`
+
+### Lists
+* Unordered list item 1
+* Unordered list item 2
+
+1. Ordered list item 1
+2. Ordered list item 2
+
+### Blockquotes
+> This is a blockquote.
+
+## Raw HTML Test
+<div>
+  <p style="color: blue;">This is a paragraph styled with raw HTML.</p>
+  <button>A Raw HTML Button</button>
+</div>
+
+## Link Checker Tests (`lychee-action`)
+
+### Valid Links
+*   [Valid Internal Link (relative)](index.html.md.erb) <!-- Assuming an index.html.md.erb or similar exists in source -->
+*   [Valid External Link to Google](https://www.google.com)
+*   [Valid External Link to Example.com](http://example.com)
+
+### Intentionally Broken Links (for testing failure)
+*   [Broken Internal Link](/non-existent-page.html)
+*   [Broken External Link](http://example.com/this-page-does-not-exist-ever)
+
+### Links with Specific Status Codes (accepted by lychee config)
+*   [Link that might return 403 (e.g., Wikipedia User-Agent block)](https://en.wikipedia.org/wiki/Main_Page) <!-- Some CI environments might get a 403 from Wikipedia due to User-Agent -->
+*   [Link that might return 403 (GitHub raw content)](https://raw.githubusercontent.com/octocat/Spoon-Knife/main/README.md) <!-- GitHub raw often blocks non-browser UAs -->
+
+<p>End of test page.</p>
