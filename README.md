@@ -1,4 +1,4 @@
-# Template Documentation Site
+# Link Checker
 
 [![Ministry of Justice Repository Compliance Badge](https://github-community.service.justice.gov.uk/repository-standards/api/template-documentation-site/badge)](https://github-community.service.justice.gov.uk/repository-standards/template-documentation-site)
 
